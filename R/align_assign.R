@@ -88,3 +88,16 @@ alignAssign2 <- function() {
   insertList <- assembleInsert(loc)
   insertr(insertList)
 }
+
+#' Align a highlighted region's assignment operators.
+#'
+#' @return Aligns the equal sign assignment operators (\code{=}) within a
+#' highlighted region.
+#' @export
+alignAssign2 <- function() {
+  capture <- capture()
+  area    <- captureArea(capture)
+  loc     <- findRegEx("#", area)
+  insertList <- assembleInsert(loc)
+  insertr(insertList)
+}
