@@ -94,7 +94,7 @@ alignAssign2 <- function() {
 #' @return Aligns the equal sign assignment operators (\code{=}) within a
 #' highlighted region.
 #' @export
-alignAssign2 <- function() {
+alignAssign3 <- function() {
   capture <- capture()
   area    <- captureArea(capture)
   loc     <- findRegEx("#", area)
